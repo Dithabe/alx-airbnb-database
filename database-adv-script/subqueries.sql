@@ -15,7 +15,7 @@ JOIN (
         Review
     GROUP BY 
         property_id
-    HAVING 
+    WHERE 
         AVG(guest_rating) > 4.0
 ) avg_rating ON p.property_id = avg_rating.property_id
 ORDER BY 
