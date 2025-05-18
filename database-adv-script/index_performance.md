@@ -59,7 +59,7 @@ Here are comparisons of key query performances before and after indexing:
   - *After:* Index scans on Review property and Property primary key; execution time ~30ms  
   - *Improvement:* 68% faster
 
-- **Query 3: Get a user\'s booking history**  
+- **Query 3: Get a booking history that belongs to a guest**  
   - *Before:* Sequential scan on Booking filtered by user_id, hash join, sorting; execution time ~80ms  
   - *After:* Index scans on user_id and Property primary key; execution time ~15ms  
   - *Improvement:* 81% faster
